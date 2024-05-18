@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.FactoryMethod
 {
-    class Client
+    class ClientFactoryMethod
     {
         public void Main()
         {

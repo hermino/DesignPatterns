@@ -43,18 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FactoryMethod\Client.cs" />
-    <Compile Include="FactoryMethod\ConcreteCreatorOne.cs" />
-    <Compile Include="FactoryMethod\ConcreteCreatorTwo.cs" />
-    <Compile Include="FactoryMethod\ConcreteProductOne.cs" />
-    <Compile Include="FactoryMethod\ConcreteProductTwo.cs" />
-    <Compile Include="FactoryMethod\Creator.cs" />
-    <Compile Include="FactoryMethod\Interfaces\IProduct.cs" />
+    <Compile Include="AbstractFactory\ClientAbstractFactory.cs" />
+    <Compile Include="AbstractFactory\ConcreteFactoryOne.cs" />
+    <Compile Include="AbstractFactory\ConcreteFactoryTwo.cs" />
+    <Compile Include="AbstractFactory\ConcreteProductAOne.cs" />
+    <Compile Include="AbstractFactory\ConcreteProductATwo.cs" />
+    <Compile Include="AbstractFactory\ConcreteProductBOne.cs" />
+    <Compile Include="AbstractFactory\ConcreteProductBTwo.cs" />
+    <Compile Include="AbstractFactory\Interfaces\IAbstractFactory.cs" />
+    <Compile Include="AbstractFactory\Interfaces\IAbstractProductA.cs" />
+    <Compile Include="AbstractFactory\Interfaces\IAbstractProductB.cs" />
+    <Compile Include="FactoryMethod\Concept\ClientFactoryMethod.cs" />
+    <Compile Include="FactoryMethod\Concept\ConcreteCreatorOne.cs" />
+    <Compile Include="FactoryMethod\Concept\ConcreteCreatorTwo.cs" />
+    <Compile Include="FactoryMethod\Concept\ConcreteProductOne.cs" />
+    <Compile Include="FactoryMethod\Concept\ConcreteProductTwo.cs" />
+    <Compile Include="FactoryMethod\Concept\Creator.cs" />
+    <Compile Include="FactoryMethod\Concept\Interfaces\IProduct.cs" />
+    <Compile Include="FactoryMethod\Real\Interfaces\IPizza.cs" />
+    <Compile Include="FactoryMethod\Real\Pizzeria.cs" />
+    <Compile Include="FactoryMethod\Real\ItalianPizzeria.cs" />
+    <Compile Include="FactoryMethod\Real\PepperoniPizza.cs" />
+    <Compile Include="FactoryMethod\Real\MargheritaPizza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns
+﻿namespace DesignPatterns.FactoryMethod.Interfaces
 {
     public interface IProduct
     {

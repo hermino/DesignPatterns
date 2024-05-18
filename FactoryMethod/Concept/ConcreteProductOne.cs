@@ -1,4 +1,6 @@
-namespace DesignPatterns
+using DesignPatterns.FactoryMethod.Interfaces;
+
+namespace DesignPatterns.FactoryMethod
 {
     class ConcreteProductOne : IProduct
     {
