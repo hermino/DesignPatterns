@@ -61,6 +61,8 @@
     <Compile Include="FactoryMethod\Concept\Creator.cs" />
     <Compile Include="FactoryMethod\Concept\Interfaces\IProduct.cs" />
     <Compile Include="FactoryMethod\Real\Interfaces\IPizza.cs" />
+    <Compile Include="FactoryMethod\Real\Order.cs" />
+    <Compile Include="FactoryMethod\Real\Pizza.cs" />
     <Compile Include="FactoryMethod\Real\Pizzeria.cs" />
     <Compile Include="FactoryMethod\Real\ItalianPizzeria.cs" />
     <Compile Include="FactoryMethod\Real\PepperoniPizza.cs" />

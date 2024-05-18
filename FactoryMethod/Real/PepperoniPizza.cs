@@ -5,31 +5,18 @@ using System.Collections.Generic;
 
 namespace DesignPatterns.FactoryMethod.Real
 {
-    internal class PepperoniPizza : IPizza
+    internal class PepperoniPizza : Pizza
     {
-        public string AddInBox()
-        {
-            return "Add pepperoni pizza in a box...";
-        }
+        public PepperoniPizza(List<string> ingredients) : base(ingredients) { }
 
-        public string Cooking()
-        {
-            return "Cooking pepperoni pizza...";
-        }
+        public override void AddInBox() => Console.WriteLine("Add pepperoni pizza in a box...");
 
-        public string Cutting()
-        {
-            return "Cutting pepperoni pizza...";
-        }
+        public override void Cooking() => Console.WriteLine("Cooking pepperoni pizza...");
 
-        public string Delivery()
-        {
-            return "Your pepperoni pizza is coming to your house!";
-        }
+        public override void Cutting() => Console.WriteLine("Cutting pepperoni pizza...");
 
-        public string Prepare(List<string> ingredients)
-        {
-            return $"Adding ingredients ({String.Join(", ", ingredients)}) on pepperoni pizza!";
-        }
+        public override void Delivery() => Console.WriteLine("Your pepperoni pizza is coming to your house!");
+
+        public override void Prepare() => Console.WriteLine($"Adding ingredients ({String.Join(", ", this.ingredients)}) on pepperoni pizza!");
     }
 }

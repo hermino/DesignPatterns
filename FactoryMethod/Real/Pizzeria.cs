@@ -10,7 +10,7 @@ namespace DesignPatterns.FactoryMethod.Real.Interfaces
         {
             IPizza pizza = CreatePizza(type);
 
-            pizza.Prepare(ingredients);
+            pizza.Prepare();
             pizza.Cooking();
             pizza.Cutting();
             pizza.AddInBox();

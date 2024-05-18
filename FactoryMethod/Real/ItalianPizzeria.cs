@@ -11,7 +11,15 @@ namespace DesignPatterns.FactoryMethod.Real
     {
         protected override IPizza CreatePizza(string type)
         {
-            throw new NotImplementedException();
+            switch (type.ToLower())
+            {
+                case "margherita":
+                    return new MargheritaPizza(new List<string> { "pizza dough", "tomato", "cheese", "basil", "oregano" });
+                case "pepperoni":
+                    return new PepperoniPizza(new List<string> { "pizza dough", "tomato", "cheese", "pepperoni", "oregano" });
+                default:
+                    throw new ArgumentException("Unknown pizza type");
+            }
         }
     }
 }
