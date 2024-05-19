@@ -1,6 +1,8 @@
 ﻿using DesignPatterns.AbstractFactory;
+using DesignPatterns.AbstractFactory.Real;
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.FactoryMethod.Real;
+using System;
 
 namespace DesignPatterns
 {
@@ -8,9 +10,15 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            //new ClientFactoryMethod().Main();
-            //new ClientAbstractFactory().Main();
+            Console.WriteLine("Factory method applications: ");
+            new ClientFactoryMethod().Main();
             new Order().Main();
+
+            Console.WriteLine();
+
+            Console.WriteLine("Abstract Factory applications: ");
+            new ClientAbstractFactory().Main();
+            new ApplicationAbstractFactory().Main();
         }
     }
 }
